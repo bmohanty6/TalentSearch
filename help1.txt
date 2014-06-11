@@ -1,0 +1,17 @@
+git checkout develop
+git branch
+git pull --rebase origin develop
+git checkout bundles/api.v21/api.v21
+git checkout externs/flex-shell-script-daemonizer/lib/._log4j-1.2.15.jar
+git checkout externs/qpid-0.16/extras/sasl/build-aux/py-compile
+git pull --rebase origin develop
+create lucene folder inside /var/
+sudo chown -R <userid>:staff /var/lucene
+create agility folder inside /var/spool/
+sudo chown -R <userid>:staff /var/spool/agility
+
+proceed to <working>/agility
+ant demo_dev
+
+
+JRE_PLUGIN PATH: /System/Library/Java/Support/Deploy.bundle/Contents/Resources/Java/plugin.jar
